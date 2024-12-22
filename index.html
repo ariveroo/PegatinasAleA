@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pegatinas Ale</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sección de la tienda -->
+    <div id="store-section">
+        <header>
+            <h1>Pegatinas Ale</h1>
+            <p>Selecciona el tamaño de tus pegatinas favoritas</p>
+        </header>
+
+        <section class="products">
+            <div class="product" onclick="agregarACesta('XXL', 2)">
+                <div class="product-content">
+                    <h3>Pegatina XXL</h3>
+                    <p>2€</p>
+                </div>
+            </div>
+            <div class="product" onclick="agregarACesta('L', 1.5)">
+                <div class="product-content">
+                    <h3>Pegatina L</h3>
+                    <p>1.5€</p>
+                </div>
+            </div>
+            <div class="product" onclick="agregarACesta('M', 1)">
+                <div class="product-content">
+                    <h3>Pegatina M</h3>
+                    <p>1€</p>
+                </div>
+            </div>
+            <div class="product" onclick="agregarACesta('S', 0.75)">
+                <div class="product-content">
+                    <h3>Pegatina S</h3>
+                    <p>0.75€</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cesta -->
+        <section id="cesta-container">
+            <h2>Cesta</h2>
+            <ul id="lista-cesta"></ul>
+            <p id="total">Total: 0€</p>
+            <button class="btn" onclick="realizarPedido()">Pedir Pedido</button>
+            <button class="btn" onclick="vaciarCesta()">Vaciar Cesta</button>
+        </section>
+    </div>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
