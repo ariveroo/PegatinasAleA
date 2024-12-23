@@ -1,0 +1,186 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+}
+
+p {
+    margin: 0 0 15px;
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Encabezado de la página "Quiénes Somos" */
+#about-header {
+    background: linear-gradient(to right, #4CAF50, #8BC34A);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#about-header .header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#about-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#about-header p {
+    font-size: 1.2rem;
+}
+
+/* Sección principal de "Quiénes Somos" */
+#about-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Introducción */
+.about-intro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-intro p {
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Misión y visión */
+.about-mission-vision {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.about-mission-vision .mission, .about-mission-vision .vision {
+    background: #f4f9f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    flex: 1 1 300px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.about-mission-vision h3 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.about-mission-vision p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Equipo - Un solo miembro */
+.team-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.team-member {
+    background: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 5px solid #4CAF50;
+}
+
+.team-member h4 {
+    margin-bottom: 5px;
+    color: #2c3e50;
+    font-size: 1.5rem;
+}
+
+.team-member p {
+    color: #777;
+}
+
+/* Botón para volver */
+.btn-back {
+    display: block;
+    text-align: center;
+    margin: 40px auto;
+    padding: 15px 30px;
+    background: #4CAF50;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-back:hover {
+    background: #45a049;
+    transform: scale(1.1);
+}
+
+/* Botón para visitar tienda */
+.btn-visit-store {
+    display: block;
+    text-align: center;
+    margin: 40px auto;
+    padding: 15px 30px;
+    background: linear-gradient(to right, #4CAF50, #8BC34A);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-visit-store:hover {
+    background: linear-gradient(to right, #43A047, #7CB342);
+    transform: scale(1.1);
+}

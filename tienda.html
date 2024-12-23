@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Pegatinas Ale</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-content">
+            <h1>Pegatinas Ale - Tienda</h1>
+            <p>Explora nuestras pegatinas y personaliza tus compras.</p>
+            <a href="index.html" class="btn btn-back">Volver al Inicio</a>
+        </div>
+    </header>
+    <main id="store-section">
+        <section class="products">
+            <!-- Producto XXL -->
+            <div class="product" data-size="XXL" data-price="2">
+                <div class="product-image">
+                    <img src="xxl.png" alt="Pegatina XXL">
+                </div>
+                <div class="product-content">
+                    <h3>Pegatina XXL</h3>
+                    <p class="product-price">2€</p>
+                    <button class="btn-add">Añadir a la Cesta</button>
+                </div>
+            </div>
+            <!-- Producto L -->
+            <div class="product" data-size="L" data-price="1.5">
+                <div class="product-image">
+                    <img src="l.png" alt="Pegatina L">
+                </div>
+                <div class="product-content">
+                    <h3>Pegatina L</h3>
+                    <p class="product-price">1.5€</p>
+                    <button class="btn-add">Añadir a la Cesta</button>
+                </div>
+            </div>
+            <!-- Producto M -->
+            <div class="product" data-size="M" data-price="1">
+                <div class="product-image">
+                    <img src="m.png" alt="Pegatina M">
+                </div>
+                <div class="product-content">
+                    <h3>Pegatina M</h3>
+                    <p class="product-price">1€</p>
+                    <button class="btn-add">Añadir a la Cesta</button>
+                </div>
+            </div>
+            <!-- Producto S -->
+            <div class="product" data-size="S" data-price="0.75">
+                <div class="product-image">
+                    <img src="s.png" alt="Pegatina S">
+                </div>
+                <div class="product-content">
+                    <h3>Pegatina S</h3>
+                    <p class="product-price">0.75€</p>
+                    <button class="btn-add">Añadir a la Cesta</button>
+                </div>
+            </div>
+        </section>
+        <aside id="cart">
+            <h2>Carrito</h2>
+            <ul id="cart-list"></ul>
+            <p id="cart-total">Total: 0€</p>
+            <button id="btn-order" class="btn" disabled>Realizar Pedido</button>
+            <button id="btn-clear" class="btn">Vaciar Carrito</button>
+        </aside>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
